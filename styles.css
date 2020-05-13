@@ -270,7 +270,7 @@ p strong {
   width: 600px;
 }
 
-/* Footer */
+/* Article Footer */
 
 footer {
   font-family: Helvetica, Arial, sans-serif;
@@ -314,14 +314,93 @@ footer i {
 
 /* Links to Other Articles */
 
+.additional-content-container {
+  display: flex;
+  justify-content: center;
+}
+
 .additional-content {
-  display: flex
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 20px 0 20px;
 }
 
 .similar-container {
   flex: 2;
+  flex-basis: 66%;
+  /* border: 1px solid red; */
+}
+
+.similar-container .border {
+  border-top: 1px solid #000;
+  margin-top: 20px;
+}
+
+.similar-container figcaption {
+  font-size: .625rem;
+  margin: 0;
+  line-height: .6rem;
+}
+
+.similar-container figure {
+  margin: 0;
+}
+
+.similar-content {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+}
+
+.similar-article {
+  max-width: calc(33% - 20px);
 }
 
 .popular-container {
   flex: 1;
+  flex-basis: 33%;
+  margin-left: 20px;
 }
+
+.additional-content > * {
+  border-top: 1px solid #000;
+}
+
+.additional-content h1 {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 700;
+  margin: 15px 0 15px 0;
+}
+
+h1.similar-article-title {
+  font-size: 1.125rem;
+  line-height: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+  color: rgb(51,51,51);
+}
+
+h2.similar-article-time {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: .75rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.3px;
+  color: rgb(153,153,153);
+}
+
+.popular-container li {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(18,18,18);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+  border-top: 1px solid rgb(226,226,226);
+  padding: 15px 0;
+}
+
+/* Directory */
+
