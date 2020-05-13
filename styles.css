@@ -68,12 +68,20 @@ img {
 
 /* Navbar */
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 0;
+}
+
 .nav-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
-  padding: 10px 20px 5px;
+  padding: 5px 160px 0;
   font-size: 15px;
 }
 
@@ -82,21 +90,27 @@ img {
   /* border: 1px solid red; */
 }
 
-.nav-links {
+.login-container {
   display: flex;
-  justify-content: flex-end;
-  margin: 5px 20px 0 20px;
-  font-size: 9px;
-  text-transform: uppercase;
 }
 
 .login {
-  margin-left: 10px;
-  padding-left: 10px;
-  border-left: 1px solid gray;
+  background-color: rgb(86,123,149);
+  border: 1px solid rgb(50,104,145);
+  border-radius: 3px;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 11px;
+  padding: 11px 12px 8px;
+  white-space: nowrap;
 }
 
 /* Header */
+
+article {
+  margin-top: 54px;
+}
 
 article header {
   display: flex;
